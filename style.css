@@ -1,125 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 *{
-    margin: 10px;
+    margin: 0;
     padding: 0;
-    background-color: darkcyan;
-
+    box-sizing: border-box;
+}
+body{
+    background-image: URL(https://wallpapercave.com/wp/wp7453711.jpg) ;
+    background-size: ;
+    background-position: ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Baloo Bhaina 2";
+    color: white;
 }
 .navbar{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    height:65px;
-    width: 1000px;
-    margin:1.5rem 2.5rem 0rem 1.5rem;
-    flex-direction: row;
-}
-/* .navbar li:nth-child(4){
-    border-right: 2px solid;
-    padding: 1rem;
-    height:2.5vh;
     display:flex;
-    
-} */
-.navbar li:nth-child(6){
-background-color: orange;
-height: 3vh;
-border-radius: 5%;
-width: 10vh;
-padding: 0.5vh 0.5vh 0vh 0.5vh;
-text-align: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: transparent;
+    box-shadow: 0 2px 10px;
 }
-.container{
-    max-width: 80vw;
-    font-family: 'Ubuntu', sans-serif;
+.logo{
+    color:red;
+    font-weight: bold;
+    font-size: 24px;
 }
-.navbar li{
+.nav-menu{
     list-style: none;
-    margin:0 12px;
-}
-.head{
-    font-style: italic;
-    font-size: 200%;
-    color: brown;
-}
-.heading{
-    font-weight: 400;
-    margin-top: 1.5rem;
-    text-align: center;
-}
-.image{
     display: flex;
-    justify-content: space-around ;
-    margin:1.5rem 2.8rem;
-    border: 4px solid brown;
-    width: 170vh;
+    gap: 25px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 5px;
+    transition: color 0.3s;
+}
+.nav-menu li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 2px;
+    width: 0%;
+    background: red;
+    transition: 0.3s ease;
+}
+.nav-menu li a:hover::before,
+.nav-menu li a:active::before
+{
+    width: 100%;
+}
+.nav-menu li a:hover{
+    color: red;
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+    flex-wrap: wrap;
+}
+.text-content{
+    max-width: 600px;
+}
+.text-content{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.red{
+    color: red;
+}
+.text-content h2{
+    font-size: 33px;
+    margin-bottom: 20px;
+    color:wheat;
+}
+.text-content p{
+    font-size: 28px;;
+color: black;
+line-height: 1.6;
+margin-bottom: 30px;
+}
+.buttons{
+    display: flex;
+    gap:20px;
+   margin-bottom: 20px;
+}
+.btn{
+    padding: 12px 28px;
+    border: 2px solid red;
+    background: transparent;
+    color: red;
+    border-radius: 30px;
+    font-weight: bold;
+    column-rule-style: pointer;
+    transition: 0.3sec;
+}
+.btn:hover{
+    background: red;
+    color: black;
+    box-shadow: 0 0 12px maroon;
+}
+.img-content img{
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px maroon;
+}
+.img-content img:hover{
+    transform: scale(1.05);
+
 
 }
-.content{
-    font-weight: 600;
-    font-size: 150%;
-    color: wheat ;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    transition: top 800ms;
-}
-.button{
-    display: flex;
-    justify-content: space-evenly;
-    margin:1.5rem 1.5rem;
-    text-decoration: none;
-    transition: top 800ms;
-}
-.b1
-{
-    background-color: purple;
-    color:white;
-    text-decoration: none;
-    padding : 0.5rem 1.5rem;
-}
-.b2
-{
-    background-color: darkgreen;
-    color: white;
-    text-decoration: none;
-    padding : 0.5rem 1.5rem;
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
-}
-.f4{
-    background-color: olivedrab;
-    height: 8vh;
-    border-radius: 2%;
-    width: 30vh;
-    padding: 0.5vh 0.5vh 0vh 0.5vh;
-    text-align: center;
-}
-.f1{
-    background-color: whitesmoke;
-    height: 8vh;
-    border-radius: 2%;
-    width: 30vh;
-    padding: 0.5vh 0.5vh 0vh 0.5vh;
-    text-align: center;
-}
-.f2{
-    background-color: whitesmoke;
-    height: 8vh;
-    border-radius: 2%;
-    width: 30vh;
-    padding: 0.5vh 0.5vh 0vh 0.5vh;
-    text-align: center;
-}
-.f3{
-    background-color: whitesmoke;
-    height: 8vh;
-    border-radius: 2%;
-    width: 30vh;
-    padding: 0.5vh 0.5vh 0vh 0.5vh;
-    text-align: center;
-}
+
+
+
+
+
+
